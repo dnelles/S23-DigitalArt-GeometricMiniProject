@@ -13,8 +13,8 @@ function mousePressed()
 function draw()
 
 {
-	//Outline every shape in white
-stroke (255);
+//Outline every shape in white
+  stroke (255);
 	
 //Blue triangle (top left)
   fill (0,0,255);
@@ -26,7 +26,7 @@ stroke (255);
 
 //Green triangle (top left)
   fill (1,90,32);
-	triangle(100,0,250,200,0,180);
+	triangle (100,0,250,200,0,180);
 	
 //Blue triangle (top right)
   fill (0,0,255)
@@ -34,7 +34,7 @@ stroke (255);
 	
 //Red triangle (top right)
   fill (255,0,0);
-  triangle (400,0,400,235,210,255)
+ 	triangle (400,0,400,235,210,255)
 	
 //Blue triangle (middle/left)
   fill (0,0,255);
