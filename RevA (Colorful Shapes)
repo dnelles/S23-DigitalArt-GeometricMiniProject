@@ -1,0 +1,54 @@
+function setup()
+{
+	createCanvas (400,400)
+	background (100);
+}
+
+//Print coords based on where mouse click is
+function mousePressed()
+{
+	print ("mouseX=", mouseX, "mouseY=", mouseY);
+}
+//Draw a triangle
+function draw()
+
+{
+	//Outline every shape in white
+stroke (255);
+	
+//Blue triangle (top left)
+  fill (0,0,255);
+	triangle (0,0,100,0,0,180);
+	
+//Red triangle (middle/top right)
+  fill (255,0,0);
+	triangle (100,0,175,100,400,0);
+
+//Green triangle (top left)
+  fill (1,90,32);
+	triangle(100,0,250,200,0,180);
+	
+//Blue triangle (top right)
+  fill (0,0,255)
+	triangle (175,100,250,200,400,0);
+	
+//Red triangle (top right)
+  fill (255,0,0);
+  triangle (400,0,400,235,210,255)
+	
+//Blue triangle (middle/left)
+  fill (0,0,255);
+	triangle (250,200,0,180,100,400)
+	
+//Green Triangle (Bottom left)
+  fill (1,90,32);
+	triangle (100,400,0,400,0,180);
+	
+//Red Triangle (Bottom middle)
+  fill (255,0,0);
+	triangle (100,400,210,255,400,400);
+	
+//Green Triangle (Bottom right)
+  fill (1,90,32);
+	triangle (400,400,210,255,400,235)
+}
