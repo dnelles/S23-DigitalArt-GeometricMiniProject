@@ -1,0 +1,53 @@
+function setup() {
+  createCanvas(400, 400);
+  background(100);
+}
+
+// Print coords based on where mouse click is
+  function mousePressed() {
+    print("mouseX=", mouseX, "mouseY=", mouseY);
+}
+
+function draw() {
+  // Outline every shape in white
+   stroke(255);
+   strokeWeight(1);
+
+  // Black triangles
+    fill(0);
+    triangle(0, 0, 100, 0, 0, 180);
+    triangle(100, 0, 175, 100, 400, 0);
+    triangle(210, 255, 0, 180, 250, 200);
+    triangle(250, 200, 45, 100, 100, 0);
+    triangle(175, 100, 250, 200, 400, 0);
+    triangle(400, 0, 400, 235, 210, 255);
+    triangle(250, 200, 0, 180, 45, 100);
+    triangle(120, 223, 0, 180, 100, 400);
+    triangle(100, 400, 0, 400, 0, 180);
+    triangle(100, 400, 210, 255, 400, 400);
+    triangle(100, 400, 120, 223, 210, 255);
+    triangle(400, 400, 210, 255, 400, 235);
+
+  // Star
+    stroke(204, 174, 112);
+    strokeWeight(5);
+    fill(0);
+    beginShape(); // start shape
+      vertex(200, 76); // Top point
+      vertex(228, 155);
+      vertex(316, 155); // Top right point
+      vertex(240, 205);
+      vertex(280, 294); // Bottom right point
+      vertex(200, 235);
+      vertex(118, 294); // Bottom left point
+      vertex(151, 205);
+      vertex(84, 155); // Top left point
+      vertex(168, 155);
+    endShape(CLOSE);
+
+  // "V" within center of star
+    fill(255);
+    text('V', 172, 215);
+    textSize(75);
+    textFont('Libre Caslon');
+}
