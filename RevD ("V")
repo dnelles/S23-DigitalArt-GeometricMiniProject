@@ -1,0 +1,94 @@
+function setup()
+{
+	createCanvas (400,400)
+	background (100);
+}
+
+//Print coords based on where mouse click is
+function mousePressed()
+{
+	print ("mouseX=", mouseX, "mouseY=", mouseY);
+}
+//Draw a triangle
+	function draw()
+
+{
+//Outline every shape in white
+  stroke (255);
+	strokeWeight(1);
+	
+//Black triangle (top left)
+  fill (0);
+	triangle (0,0,100,0,0,180);
+	
+//Black triangle (middle/top right)
+  fill (0);
+	triangle (100,0,175,100,400,0);
+	
+//Black triangle (small, middle/left)	
+	fill (0);
+	triangle (210,255,0,180,250,200);
+
+//Black triangle (top left)
+  fill (0);
+	triangle (250,200,45,100,100,0);
+	
+//Black triangle (top right)
+  fill (0)
+	triangle (175,100,250,200,400,0);
+	
+//Black triangle (top right)
+  fill (0);
+ 	triangle (400,0,400,235,210,255)
+	
+//Black triangle (middle/left)
+  fill (0);
+	triangle (250,200,0,180,45,100)
+	
+//Black triangle (middle/left)
+	fill (0);
+	triangle (120,223,0,180,100,400);
+	
+//Black Triangle (Bottom left)
+  fill (0);
+	triangle (100,400,0,400,0,180);
+	
+//Black Triangle (Bottom middle)
+  fill (0);
+	triangle (100,400,210,255,400,400);
+	
+//Black Triangle (Bottom middle)
+  fill (0);
+	triangle (100,400,120,223,210,255);
+	
+//Black Triangle (Bottom right)
+  fill (0);
+	triangle (400,400,210,255,400,235)
+	
+//Ellipse to outline star
+	//fill (204,174,112); TEMP CANCEL
+	//ellipse (200,200,250,250); TEMP CANCEL
+	
+//Star
+	stroke (204,174,112);
+	strokeWeight (5);
+	fill (0);
+	beginShape(); //start shape
+	vertex (200, 76); //Top point
+	vertex (228, 155);
+	vertex (316, 155); //Top right point
+	vertex (240, 205);
+	vertex (280, 294); //Bottom right point
+	vertex (200, 235);
+	vertex (118, 294); //Bottom left point
+	vertex (151, 205);
+	vertex (84, 155); //Top left point
+	vertex (168, 155);
+	endShape (CLOSE);
+	
+//"V" within center of star
+	fill(255);
+	text('V', 172, 215);
+	textSize(75);
+	textFont('Libre Caslon');
+}
