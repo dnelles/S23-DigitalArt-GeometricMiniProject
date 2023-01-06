@@ -10,7 +10,7 @@ function mousePressed()
 	print ("mouseX=", mouseX, "mouseY=", mouseY);
 }
 //Draw a triangle
-function draw()
+	function draw()
 
 {
 //Outline every shape in white
